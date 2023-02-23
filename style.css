@@ -979,3 +979,23 @@ fieldset {
 #tab-flexbox {
     height:auto;
 }
+
+
+#tab-react {
+    flex-direction: initial !important;
+}
+
+.fa-brands {
+    font-size: 30px;
+    padding: 25px;
+}
+
+.fa-brands-a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-brands-a:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+}

@@ -269,6 +269,12 @@ transition-duration: .3s;
     flex-direction: column;
    }
 
+    .contact-group {
+    display: block;
+    }
+    .fast-contact {
+        width: 100% !important;
+    }
 }
 
 .continfoph {

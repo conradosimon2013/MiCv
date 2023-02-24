@@ -1,41 +1,5 @@
 
 
-// --------------add active class-on another-page move----------
-jQuery(document).ready(function($){
-	// Get current path and find target link
-	var path = window.location.pathname.split("/").pop();
-
-	// Account for home page with empty path
-	if ( path == '' ) {
-		path = 'index.html';
-	}
-
-	var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
-	// Add active class to target link
-	target.parent().addClass('active');
-});
-
-
-
-
-// Add active class on another page linked
-// ==========================================
-// $(window).on('load',function () {
-//     var current = location.pathname;
-//     console.log(current);
-//     $('#navbarSupportedContent ul li a').each(function(){
-//         var $this = $(this);
-//         // if the current path is like this link, make it active
-//         if($this.attr('href').indexOf(current) !== -1){
-//             $this.parent().addClass('active');
-//             $this.parents('.menu-submenu').addClass('show-dropdown');
-//             $this.parents('.menu-submenu').parent().addClass('active');
-//         }else{
-//             $this.parent().removeClass('active');
-//         }
-//     })
-// });
-
 class StickyNavigation {
 	
 	constructor() {
@@ -48,6 +12,7 @@ class StickyNavigation {
 		});
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
+
 	}
 	
 	onTabClick(event, element) {
@@ -111,26 +76,37 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
-
+	
+	let d = 0
 
 
 $(window).scroll(function(){
-    if (window.pageYOffset >= 400){
+	
+
+    if (window.pageYOffset >= 400 && (d == 0)){
+        ;
     $(".skillbar").each(function () {
           $(this)
             .find(".skillbar-bar")
             .animate(
               {
                 width: $(this).attr("data-percent")
-              },
+              }, 
+             
               2500
+
             );
         });
-if(window.pageYOffset >= 800) {
-
+						if(window.pageYOffset >= 900 && (d == 0)) {
+							d = 1;
+console.log("asfasf")
      $("#experience").addClass("is-active");
 
      $("#work").addClass("is-active");
+     
 } }
+
 });
 
+
+	

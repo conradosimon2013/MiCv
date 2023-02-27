@@ -229,7 +229,26 @@ a {
     outline: 10px solid rgb(18 19 29);
     transition-duration: 0.3s;
 }
-
+.pinfo {
+    font-size: 12px;
+    margin: 20px 0px 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+.pinfo a {
+    color:rgba(255, 255, 255, 0.7);
+}
+.pinfo a:hover {
+    text-decoration: none;
+    color: rgb(48 170 57);
+}
+.spinfo {
+        color: rgb(48 111 57);
+        font-size: 15px;
+        margin: 0px 0px 0px 10px;
+}
 @media screen and (max-width: 810px) {
     .content-perfil {
         flex-direction: column !important;
@@ -280,7 +299,7 @@ a {
     text-shadow: 2px 2px 2px black;
 }
 .pcontph {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: justify !important;
 
     padding-top: 10px;
